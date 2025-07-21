@@ -2,101 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shadi Mahassel</title>
+  <title>Shadi Mahassel – Contact Card</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #000;
-      color: #fff;
+      margin:0; padding:0;
+      font-family: Arial, sans-serif;
+      background:#f8f9fa;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
     }
-    .card {
-      max-width: 380px;
-      margin: 40px auto;
-      background-color: #111;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    .wrapper {
+      background:white;
+      border-radius:8px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      text-align:center;
+      width:320px;
+      padding:20px;
     }
-    .top {
-      padding: 2rem 1rem 1rem;
-      text-align: center;
-      background-color: #000;
+    .wrapper img.avatar {
+      width:100px; height:100px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:12px;
     }
-    .top img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+    .wrapper h1 {
+      margin:0;
+      font-size:1.2rem;
+      color:#333;
     }
-    .top h2 {
-      margin: 0.4rem 0 0;
-      font-size: 1.3rem;
+    .wrapper p.role {
+      margin:4px 0 12px;
+      color:#666;
+      font-size:0.9rem;
     }
-    .top p {
-      color: #ccc;
-      margin: 0.2rem 0 1rem;
-    }
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-      background-color: #111;
-      padding: 1rem;
-    }
-    .buttons a {
-      padding: 0.6rem 1.2rem;
-      background-color: #f44336;
-      color: white;
-      border-radius: 24px;
-      text-decoration: none;
-      font-weight: bold;
+    .btn {
+      display:inline-block;
+      margin:8px 6px;
+      padding:8px 16px;
+      background:#007bff;
+      color:white;
+      border:none;
+      border-radius:4px;
+      text-decoration:none;
+      font-size:0.9rem;
     }
     .info {
-      background-color: #fff;
-      color: #000;
-      padding: 1.2rem;
-      text-align: left;
-      font-size: 0.95rem;
+      margin-top:16px;
+      text-align:left;
+      color:#444;
+      font-size:0.85rem;
     }
     .info div {
-      margin-bottom: 0.6rem;
+      margin:6px 0;
     }
     .info a {
-      color: #d32f2f;
-      text-decoration: none;
+      color:#007bff;
+      text-decoration:none;
+    }
+    .qr {
+      margin:20px 0;
     }
     .download {
-      text-align: center;
-      margin-top: 1rem;
+      margin-top:12px;
     }
     .download a {
-      color: #d32f2f;
-      font-weight: bold;
-      text-decoration: none;
+      color:#007bff;
+      text-decoration:none;
+      font-weight:bold;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="top">
-      <img src="shadi.png" alt="Shadi Mahassel">
-      <h2>Shadi Mahassel</h2>
-      <p>CEO</p>
-    </div>
-    <div class="buttons">
-      <a href="tel:+447787701376">CALL</a>
-      <a href="mailto:shadi@meshx.io">EMAIL</a>
-    </div>
+  <div class="wrapper">
+    <img class="avatar" src="shadi.png" alt="Shadi Mahassel">
+    <h1>Shadi Mahassel</h1>
+    <p class="role">CEO, meshX</p>
+    <a class="btn" href="tel:+447787701376">📞 CALL</a>
+    <a class="btn" href="mailto:shadi@meshx.io">✉️ EMAIL</a>
     <div class="info">
-      <div><strong>Phone:</strong> <a href="tel:+447787701376">+44 778 770 13 76</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+447787701376">+44 778 770 13 76</a></div>
       <div><strong>Email:</strong> <a href="mailto:shadi@meshx.io">shadi@meshx.io</a></div>
       <div><strong>Company:</strong> meshX</div>
       <div><strong>Title:</strong> CEO</div>
-      <div class="download">
-        <a href="https://drive.google.com/uc?id=1SEjrfFP0r-JaknyS_ACRsnNTRFxy4-SJ&export=download" target="_blank">📥 Download vCard</a>
-      </div>
+    </div>
+    <div class="qr">
+      <!-- Placeholder mã QR: mình sẽ tạo và bạn thay vào đây -->
+      <img src="qr-code.png" alt="QR Code">
+    </div>
+    <div class="download">
+      <a href="https://vudao-2311.github.io/shadi-contact/index.html">View Online</a>
     </div>
   </div>
 </body>
