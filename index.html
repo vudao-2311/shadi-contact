@@ -22,14 +22,15 @@
       display: flex;
       justify-content: space-around;
       background-color: #0a0a0a;
-      padding: 0.5rem 0;
+      padding: 0.75rem 0;
     }
     .action-btn {
       display: flex;
       align-items: center;
       color: white;
       font-size: 0.9rem;
-      gap: 6px;
+      gap: 8px;
+      text-decoration: none;
     }
 
     .card {
@@ -44,8 +45,8 @@
     .info-row {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 1rem;
+      gap: 12px;
+      margin-bottom: 1.25rem;
     }
     .info-text {
       display: flex;
@@ -64,7 +65,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       background-color: #f9361b;
       color: white;
       padding: 0.75rem 1rem;
@@ -72,11 +73,17 @@
       border: none;
       border-radius: 4px;
       text-decoration: none;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     .download-btn svg {
       stroke: white;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
     }
 
     @media screen and (max-width: 600px) {
@@ -94,21 +101,21 @@
 
   <div class="actions">
     <a href="tel:+447787701376" class="action-btn">
-      <!-- Call Icon -->
-      📞 CALL
+      <!-- CALL Icon -->
+      [ICON_CALL]
+      <span>CALL</span>
     </a>
     <a href="mailto:shadi@meshx.io" class="action-btn">
-      <!-- Email Icon -->
-      📧 EMAIL
+      <!-- EMAIL Icon -->
+      [ICON_EMAIL]
+      <span>EMAIL</span>
     </a>
   </div>
 
   <div class="card">
     <div class="info-row">
       <!-- Telephone SVG -->
-      <div>
-        📞
-      </div>
+      [ICON_TELEPHONE]
       <div class="info-text">
         <div class="info-title">Telephone</div>
         <div class="info-value">+44 778 770 13 76</div>
@@ -117,9 +124,7 @@
 
     <div class="info-row">
       <!-- Email SVG -->
-      <div>
-        📧
-      </div>
+      [ICON_EMAIL_BLACK]
       <div class="info-text">
         <div class="info-title">Email</div>
         <div class="info-value">shadi@meshx.io</div>
@@ -128,9 +133,7 @@
 
     <div class="info-row">
       <!-- Company SVG -->
-      <div>
-        🏢
-      </div>
+      [ICON_COMPANY]
       <div class="info-text">
         <div class="info-title">Company</div>
         <div class="info-value">meshX</div>
@@ -139,9 +142,7 @@
 
     <div class="info-row">
       <!-- Website SVG -->
-      <div>
-        🌐
-      </div>
+      [ICON_WEBSITE]
       <div class="info-text">
         <div class="info-title">Website</div>
         <div class="info-value">meshx.io</div>
@@ -150,7 +151,8 @@
 
     <a class="download-btn" href="vcard.vcf" download>
       <!-- Download VCard SVG -->
-      👤 DOWNLOAD VCARD
+      [ICON_VCARD]
+      <span>DOWNLOAD VCARD</span>
     </a>
   </div>
 
