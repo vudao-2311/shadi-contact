@@ -3,179 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shadi Mahassel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>Shadi Mahassel - CEO</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f9f9f9; }
     .header {
-      background: #080808;
-      color: white;
+      background-color: #0a0a0a;
+      padding: 2rem 1rem 1rem;
       text-align: center;
-      padding: 40px 20px 20px;
+      color: white;
     }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
+    .name { font-size: 1.5rem; font-weight: 700; }
+    .title { font-size: 1rem; color: #ccc; margin-top: 4px; }
 
-    .header img {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .name {
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .title {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    .contact-buttons {
+    .actions {
       display: flex;
-      justify-content: center;
-      background: #080808;
-      border-top: 1px solid #111;
-      border-bottom: 1px solid #111;
+      justify-content: space-around;
+      background-color: #0a0a0a;
+      padding: 0.5rem 0;
     }
-
-    .contact-buttons a {
-      flex: 1;
-      text-align: center;
-      padding: 12px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 12px;
-    }
-
-    .contact-buttons a svg {
-      vertical-align: middle;
-      margin-bottom: 4px;
-    }
-
-    .section {
-      background: white;
-      margin: 0 auto;
-      padding: 20px;
-      max-width: 400px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .item {
+    .action-btn {
       display: flex;
       align-items: center;
-      margin-bottom: 16px;
+      color: white;
+      font-size: 0.9rem;
+      gap: 6px;
     }
 
-    .item svg {
-      margin-right: 12px;
-      min-width: 24px;
-      min-height: 24px;
+    .card {
+      background-color: white;
+      width: 100%;
+      max-width: 400px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+    .info-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .info-title {
+      font-size: 0.8rem;
+      color: #555;
+    }
+    .info-value {
+      font-size: 0.9rem;
+      color: #000;
     }
 
-    .label {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .value {
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .download {
+    .download-btn {
       display: flex;
       justify-content: center;
-      margin-top: 32px;
-    }
-
-    .download a {
-      background: #f93822;
-      color: white;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      display: flex;
       align-items: center;
       gap: 8px;
+      background-color: #f9361b;
+      color: white;
+      padding: 0.75rem 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
     }
 
-    @media (max-width: 480px) {
-      .section {
-        margin: 0 10px;
-      }
+    .download-btn svg {
+      stroke: white;
+    }
+
+    @media screen and (max-width: 600px) {
+      .card { margin: 1rem; }
     }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <img src="shadi.png" alt="Shadi Mahassel" />
+    <img src="shadi.png" alt="Shadi Mahassel" class="avatar" />
     <div class="name">Shadi Mahassel</div>
     <div class="title">CEO</div>
   </div>
 
-  <div class="contact-buttons">
-    <a href="tel:+447787701376">
+  <div class="actions">
+    <a href="tel:+447787701376" class="action-btn">
+      <!-- Call Icon -->
       📞 CALL
     </a>
-    <a href="mailto:shadi@meshx.io">
+    <a href="mailto:shadi@meshx.io" class="action-btn">
+      <!-- Email Icon -->
       📧 EMAIL
     </a>
   </div>
 
-  <div class="section">
-    <div class="item">
+  <div class="card">
+    <div class="info-row">
       <!-- Telephone SVG -->
-      📞
       <div>
-        <div class="label">Telephone</div>
-        <div class="value">+44 778 770 13 76</div>
+        📞
+      </div>
+      <div class="info-text">
+        <div class="info-title">Telephone</div>
+        <div class="info-value">+44 778 770 13 76</div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="info-row">
       <!-- Email SVG -->
-      ✉️
       <div>
-        <div class="label">Email</div>
-        <div class="value">shadi@meshx.io</div>
+        📧
+      </div>
+      <div class="info-text">
+        <div class="info-title">Email</div>
+        <div class="info-value">shadi@meshx.io</div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="info-row">
       <!-- Company SVG -->
-      🏢
       <div>
-        <div class="label">Company</div>
-        <div class="value">meshX</div>
+        🏢
+      </div>
+      <div class="info-text">
+        <div class="info-title">Company</div>
+        <div class="info-value">meshX</div>
       </div>
     </div>
 
-    <div class="item">
+    <div class="info-row">
       <!-- Website SVG -->
-      🌐
       <div>
-        <div class="label">Website</div>
-        <div class="value">meshx.io</div>
+        🌐
+      </div>
+      <div class="info-text">
+        <div class="info-title">Website</div>
+        <div class="info-value">meshx.io</div>
       </div>
     </div>
 
-    <div class="download">
-      <a href="shadi.vcf" download>
-        <!-- Download VCard SVG -->
-        👤 DOWNLOAD VCARD
-      </a>
-    </div>
+    <a class="download-btn" href="vcard.vcf" download>
+      <!-- Download VCard SVG -->
+      👤 DOWNLOAD VCARD
+    </a>
   </div>
 
 </body>
