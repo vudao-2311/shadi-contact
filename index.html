@@ -3,112 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shadi Mahassel - CEO, meshX</title>
+  <title>Shadi Mahassel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f6f7;
       margin: 0;
-      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
     }
-
-    .container {
-      max-width: 350px;
-      background: #fff;
-      margin: 40px auto;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    .header {
+      background-color: #0a0a0a;
+      color: white;
       text-align: center;
+      padding: 2rem 1rem 1rem;
     }
-
-    .avatar {
+    .header img {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
     }
-
-    h2 {
-      margin: 5px 0 8px;
-      font-size: 20px;
+    .header h1 {
+      margin: 0;
+      font-size: 1.5rem;
     }
-
-    .subtitle {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 20px;
+    .header h2 {
+      margin: 0.2rem 0 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #ccc;
     }
-
-    .btn-group {
+    .buttons {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+      background: #0a0a0a;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
     }
-
-    .btn {
-      background-color: #007bff;
-      border: none;
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 14px;
-      cursor: pointer;
+    .button {
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .button:hover {
+      background-color: #111;
+    }
+    .info {
+      background-color: white;
+      padding: 1.5rem;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .info-item {
       display: flex;
       align-items: center;
-      gap: 6px;
-      text-decoration: none;
+      margin-bottom: 1.2rem;
     }
-
-    .info {
-      text-align: left;
-      font-size: 14px;
-      margin-bottom: 20px;
+    .info-item img {
+      width: 20px;
+      margin-right: 1rem;
+      opacity: 0.7;
     }
-
-    .info b {
+    .info-item span {
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+    .download {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .download a {
       display: inline-block;
-      width: 60px;
-    }
-
-    .qr {
-      max-width: 120px;
-      margin: 0 auto 10px;
-    }
-
-    .view-online {
-      color: #007bff;
+      background-color: #ff2c1f;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 5px;
-      font-size: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 500px) {
+      .info {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      .header img {
+        width: 80px;
+        height: 80px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="shadi.png" alt="Shadi Mahassel" class="avatar" />
-    <h2>Shadi Mahassel</h2>
-    <div class="subtitle">CEO, meshX</div>
 
-    <div class="btn-group">
-      <a href="tel:+447787701376" class="btn">📞 CALL</a>
-      <a href="mailto:shadi@meshx.io" class="btn">✉️ EMAIL</a>
-    </div>
-
-    <div class="info">
-      <div><b>Phone:</b> +44 778 770 13 76</div>
-      <div><b>Email:</b> shadi@meshx.io</div>
-      <div><b>Company:</b> meshX</div>
-      <div><b>Title:</b> CEO</div>
-    </div>
-
-    <img src="qr.png" alt="QR Code" class="qr" />
-    <br/>
-    <a href="#" class="view-online">🔗 View Online</a>
+  <div class="header">
+    <img src="shadi.png" alt="Shadi Mahassel"/>
+    <h1>Shadi Mahassel</h1>
+    <h2>CEO</h2>
   </div>
+
+  <div class="buttons">
+    <a href="tel:+447787701376" class="button">📞 CALL</a>
+    <a href="mailto:shadi@meshx.io" class="button">📨 EMAIL</a>
+  </div>
+
+  <div class="info">
+    <div class="info-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png"/>
+      <div>
+        <span>Telephone:</span> +44 778 770 13 76
+      </div>
+    </div>
+
+    <div class="info-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"/>
+      <div>
+        <span>Email:</span> shadi@meshx.io
+      </div>
+    </div>
+
+    <div class="info-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/briefcase.png"/>
+      <div>
+        <span>Company:</span> meshX
+      </div>
+    </div>
+
+    <div class="info-item">
+      <img src="https://img.icons8.com/ios-filled/50/000000/internet.png"/>
+      <div>
+        <span>Website:</span> meshx.io
+      </div>
+    </div>
+
+    <div class="download">
+      <a href="shadi.vcf" download>👤 DOWNLOAD VCARD</a>
+    </div>
+  </div>
+
 </body>
 </html>
