@@ -1,6 +1,3 @@
-# Cập nhật lại HTML với thiết kế UI đẹp hơn, giống mẫu gốc bạn gửi
-
-updated_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +26,8 @@ updated_html = """
     }
     .top img {
       width: 100px;
+      height: 100px;
+      object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
@@ -82,7 +81,7 @@ updated_html = """
 <body>
   <div class="card">
     <div class="top">
-      <img src="https://avatars.githubusercontent.com/u/139127565?s=200&v=4" alt="Shadi Mahassel">
+      <img src="shadi.png" alt="Shadi Mahassel">
       <h2>Shadi Mahassel</h2>
       <p>CEO</p>
     </div>
@@ -102,11 +101,3 @@ updated_html = """
   </div>
 </body>
 </html>
-"""
-
-# Lưu lại file mới
-pretty_html_path = "/mnt/data/index.html"
-with open(pretty_html_path, "w") as f:
-    f.write(updated_html)
-
-pretty_html_path
