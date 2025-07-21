@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shadi Mahassel – Contact Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shadi Mahassel - CEO, meshX</title>
   <style>
     body {
-      margin:0; padding:0;
       font-family: Arial, sans-serif;
-      background:#f8f9fa;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:100vh;
+      background: #f5f6f7;
+      margin: 0;
+      padding: 0;
     }
-    .wrapper {
-      background:white;
-      border-radius:8px;
-      box-shadow:0 2px 10px rgba(0,0,0,0.1);
-      text-align:center;
-      width:320px;
-      padding:20px;
+
+    .container {
+      max-width: 350px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .wrapper img.avatar {
-      width:100px; height:100px;
-      border-radius:50%;
-      object-fit:cover;
-      margin-bottom:12px;
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
-    .wrapper h1 {
-      margin:0;
-      font-size:1.2rem;
-      color:#333;
+
+    h2 {
+      margin: 5px 0 8px;
+      font-size: 20px;
     }
-    .wrapper p.role {
-      margin:4px 0 12px;
-      color:#666;
-      font-size:0.9rem;
+
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
     }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
     .btn {
-      display:inline-block;
-      margin:8px 6px;
-      padding:8px 16px;
-      background:#007bff;
-      color:white;
-      border:none;
-      border-radius:4px;
-      text-decoration:none;
-      font-size:0.9rem;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
     }
+
     .info {
-      margin-top:16px;
-      text-align:left;
-      color:#444;
-      font-size:0.85rem;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 20px;
     }
-    .info div {
-      margin:6px 0;
+
+    .info b {
+      display: inline-block;
+      width: 60px;
     }
-    .info a {
-      color:#007bff;
-      text-decoration:none;
-    }
+
     .qr {
-      margin:20px 0;
+      max-width: 120px;
+      margin: 0 auto 10px;
     }
-    .download {
-      margin-top:12px;
-    }
-    .download a {
-      color:#007bff;
-      text-decoration:none;
-      font-weight:bold;
+
+    .view-online {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <img class="avatar" src="shadi.png" alt="Shadi Mahassel">
-    <h1>Shadi Mahassel</h1>
-    <p class="role">CEO, meshX</p>
-    <a class="btn" href="tel:+447787701376">📞 CALL</a>
-    <a class="btn" href="mailto:shadi@meshx.io">✉️ EMAIL</a>
+  <div class="container">
+    <img src="shadi.png" alt="Shadi Mahassel" class="avatar" />
+    <h2>Shadi Mahassel</h2>
+    <div class="subtitle">CEO, meshX</div>
+
+    <div class="btn-group">
+      <a href="tel:+447787701376" class="btn">📞 CALL</a>
+      <a href="mailto:shadi@meshx.io" class="btn">✉️ EMAIL</a>
+    </div>
+
     <div class="info">
-      <div><strong>Phone:</strong> <a href="tel:+447787701376">+44 778 770 13 76</a></div>
-      <div><strong>Email:</strong> <a href="mailto:shadi@meshx.io">shadi@meshx.io</a></div>
-      <div><strong>Company:</strong> meshX</div>
-      <div><strong>Title:</strong> CEO</div>
+      <div><b>Phone:</b> +44 778 770 13 76</div>
+      <div><b>Email:</b> shadi@meshx.io</div>
+      <div><b>Company:</b> meshX</div>
+      <div><b>Title:</b> CEO</div>
     </div>
-    <div class="qr">
-      <!-- Placeholder mã QR: mình sẽ tạo và bạn thay vào đây -->
-      <img src="qr-code.png" alt="QR Code">
-    </div>
-    <div class="download">
-      <a href="https://vudao-2311.github.io/shadi-contact/index.html">View Online</a>
-    </div>
+
+    <img src="qr.png" alt="QR Code" class="qr" />
+    <br/>
+    <a href="#" class="view-online">🔗 View Online</a>
   </div>
 </body>
 </html>
